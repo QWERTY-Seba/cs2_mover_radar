@@ -39,7 +39,7 @@ def extraer_valores(full_path):
                         if nombre in variables:
                             variables[nombre] = valor
 
-base_path = r"C:\Program Files (x86)\Steam\userdata\1202384437\730\local\cfg"  # <-- cambia por tu path
+base_path = r"C:\Program Files (x86)\Steam\userdata\0\730\local\cfg"  # <-- cambia por tu path
 archivos = ["cs2_machine_convars.vcfg", "cs2_video.txt"]
 for archivo in archivos:
     extraer_valores(os.path.join(base_path, archivo))
@@ -107,4 +107,5 @@ radar.run()
 
 radar.actualizar_tamaño(diametro=350)
 radar.actualizar_posicion(x=1280,y=900)
+
 sys.exit(app.exec_())
